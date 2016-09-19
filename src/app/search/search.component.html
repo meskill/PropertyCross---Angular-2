@@ -7,9 +7,9 @@
 		<div class='instruction'>
 			{{instruction}}
 		</div>
-		<input class='search' type="text" name="search" value=""/>
+		<input class='search' type="text" name="search" value="" [(ngModel)]='search'/>
 		<div class='search-buttons'>
-			<button>Go</button>
+			<button (click)='onSearch()'>Go</button>
 			<button>My Location</button>
 		</div>
 	</div>
